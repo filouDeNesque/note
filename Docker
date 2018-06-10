@@ -1,0 +1,35 @@
+--------#Docker--------
+	---------------
+		-------	
+
+##creation / ouverture
+ex : docker run debian
+	ex : docker run -ti debian
+		(laisse le terminal ouvert)
+
+
+## Quitter
+	ex: exit
+
+
+## Liste les images
+	ex: docker images
+
+
+## Liste les processus
+	ex:  docker ps
+
+
+## Liste les difference
+	ex: docker diff (nom du conteneur)
+
+
+## Enregistre les modifications dans un conteneur
+	ex: docker commit (nom du conteneur) (nom du nouveau conteneur)
+	ex: docker commit 16c newcontainer
+
+
+## Enregistrer sa machine en local
+	ex: docker save  (nom du conteneur) > (chemin du dossier)
+	ex: docker save debiantest > /user/paul/www/debiantest.tar
+
