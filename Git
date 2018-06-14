@@ -1,3 +1,79 @@
 ---------GIT----------
 
-##
+## Demarrer un depot
+    exe: git init
+
+
+## Cloner un depot
+    exe: git clone https://github.com/filouDeNesque/note.git
+
+
+## Ajouter des fichiers 
+    exe: git add . 
+    (ajoute tout)
+
+
+## Publier les changement
+    exe: git commit -m "message"
+
+
+## Envoyer les paquets
+    ex: git push origin master
+
+
+## Statut du depot
+    ex: git status
+
+## Connecter à "Github"
+    ex: git remote add (nom de la remote) (branche de github)
+    ex: git remote add origin https://github.com/filouDeNesque/note.git
+    
+    ### Lister les remote
+    ex: remote -v
+
+
+## Creez une nouvelle branch
+    ex: git checkout -b (nom de la branch)
+    ex: git checkout -b secondary
+
+
+## Changer de branch
+    ex: git checkout (nom de la branch)
+    ex: git checkout secondary
+    ### Lister toutes les branches
+    ex: git branch
+
+
+## supprimer une branche 
+    ex: git branch -d (nom de la branche)
+    ex: git branch -d secondary
+
+
+## push une branche
+    ex: git push (nom de la branche)
+    ex: git push origin master
+    ### Push tout
+    ex: git push --all origin
+
+## Supprimer une branche
+    ex: git push origin :(nom de la branche)
+    ex: git push origin :secondary
+
+
+## Mettre a jour depuis le depot github
+    ex: git pull
+
+
+## Merge de branche vers la branche active
+    ex: git merge (nom de la branche)
+    ex: git merge secondary
+
+## Difference 
+    ### Diference sur un fichiers  
+        ex: git diff --base (nom du fichier)
+        ex: git diff --base git.txt
+    ### Diference entre deux branche
+        ex: git diff (nom de la branche source ) (nom de la branche visée)
+        ex: git diff secondary master
+    ### difference avant merge
+        ex: git diff    
